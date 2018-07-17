@@ -90,7 +90,7 @@ def search(m, quiet, url, controller, out=None, **kwargs):
             )
 
             # Post the indicator to the QueryAPI
-            response = requests.post('https://falconapi.crowdstrike.com/indicators/entities/iocs/v1', headers=headers, data=indicator, auth=('', ''))
+            response = requests.post('https://falconapi.crowdstrike.com/indicators/entities/iocs/v1', headers=headers, data=indicator, auth=('YOURQUERYAPIUSER', 'YOURQUERYAPISECRET'))
 
             # Apply tag to MISP attribute to indicate it has been uploaded as IOC
             misp.tag(row.get('uuid'), "Uploaded to CrowdStrike")
