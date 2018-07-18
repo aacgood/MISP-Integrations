@@ -24,3 +24,4 @@ Recommend adding this command to a cronjob to poll MISP at a set interval.
 - Add support to delete indicators
 - Add command line paramater support to set expiry dates.
 - PEP all the things
+- Migrate to CrowdStrike Python API
