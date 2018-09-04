@@ -17,7 +17,7 @@ if __name__ == '__main__':
     parser.add_argument("-u", "--uuid", help="UUID to tag.")
     parser.add_argument("-e", "--event", help="Event ID to tag.")
     parser.add_argument("-a", "--attribute", help="Attribute ID to tag")
-    parser.add_argument("-t", "--tags", required=False, help="Attribute ID to modify.", nargs="+", type=int)
+    parser.add_argument("-t", "--tags", required=False, help="List of tags.", nargs="+", type=int)
     args = parser.parse_args()
 
     if not args.event and not args.uuid and not args.attribute:
