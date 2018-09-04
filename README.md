@@ -37,3 +37,18 @@ Recommend adding this command to a cronjob to poll MISP at a set interval.
 - PEP all the things.
 - Migrate to CrowdStrike Python API.
 - Add command line parameter support for tags.
+
+
+## MISP Tags
+
+### addtags3.py
+
+Add multiple tags to an event or attribute with pymisp.
+
+#### Sample usage
+
+python3 - addtag3.py -e 100 -t 1 2 3 4 5
+
+#### Requirements
+- pymisp
+- keys.py (see https://github.com/MISP/PyMISP/tree/master/examples)
