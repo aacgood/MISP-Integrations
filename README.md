@@ -41,13 +41,13 @@ Recommend adding this command to a cronjob to poll MISP at a set interval.
 
 ## MISP Tags
 
-### addtags3.py
+### addtags.py
 
 Add multiple tags to an event or attribute with pymisp.
 
 #### Sample usage
 
-python3 - addtag3.py -e 100 -t 1 2 3 4 5
+python3 - addtag.py -e 100 -t 1 2 3 4 5
 
 #### Requirements
 - pymisp
